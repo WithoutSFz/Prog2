@@ -6,13 +6,19 @@ public class Ejecutable {
 		Nodo raiz = new Nodo(7);
 		raiz.addNodo(1);
 		raiz.addNodo(9);
+		raiz.addNodo(3);
+		raiz.addNodo(11);
 		raiz.addNodo(5);
 		raiz.addNodo(8);
+		
+		
 		ImprimirEnPantalla output= new ImprimirEnPantalla();
 		System.out.println("Arbol con recorrido inorder");
 		raiz.inOrder(output);
 		System.out.println("Arbol con recorrido posorder");
 		raiz.posOrder(output);
+		
+		
 		ToList lista_del_arbol= new ToList();
 		raiz.inOrder(lista_del_arbol);
 		System.out.println("Lista ascendente");
@@ -22,6 +28,10 @@ public class Ejecutable {
 		System.out.println("Lista  descendenter");
 		lista_del_arbol.imprimir();
 		
+		
+		CantidadDeNodos cant=new CantidadDeNodos();
+		raiz.inOrder(cant);
+		System.out.println("La cantidad de nodos son: "+cant.get()+".");
 
 	}
 
