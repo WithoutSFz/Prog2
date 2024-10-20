@@ -78,6 +78,8 @@ public class Ejecutable {
 		System.out.println(filtrado_monto.lista().toString());
 		System.out.println();
 		
+		//e) Cualquier combinación lógica de búsquedas.
+ 
 		
 		
 	}
