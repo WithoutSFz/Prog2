@@ -56,6 +56,14 @@ public class Socio implements Comparable{
 				resultado++;
 		return resultado;
 	}
+	
+	public boolean gastoAlquiler(double monto) {	
+		for(Alquiler a :this.alquileres)
+			if(a.getMonto()==monto)
+				return true;
+		return false;
+			
+	}
 	@Override
 	public int compareTo(Object o) {
 		if(this.apellido.compareTo(((Socio) o).getApellido())==0)

@@ -15,5 +15,7 @@ public class ComparatorCantidadAlquileres implements Comparator<Socio> {
 		return o1.cantAlquilo(this.id_cancha)-o2.cantAlquilo(this.id_cancha);
 	}
 	
-
+	public int getId() {
+		return this.id_cancha;
+	}
 }
