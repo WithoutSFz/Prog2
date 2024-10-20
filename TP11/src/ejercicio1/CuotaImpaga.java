@@ -4,7 +4,11 @@ import java.util.Collections;
 
 public class CuotaImpaga implements AccionEjecutable {
 	
-	private ArrayList<Socio> socios_filtrados = new ArrayList<Socio>();
+	private ArrayList<Socio> socios_filtrados;
+	
+	public CuotaImpaga() {
+		this.socios_filtrados= new ArrayList<Socio>();
+	}
 	
 
 	@Override

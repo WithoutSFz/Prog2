@@ -5,9 +5,10 @@ import java.util.Collections;
 
 public class SociosMenores implements AccionEjecutable {
 	
-	private ArrayList<Socio> socios_filtrados = new ArrayList<Socio>();
+	private ArrayList<Socio> socios_filtrados;
 	private int edad_limite;
 	public SociosMenores(int edad_limite) {
+		this.socios_filtrados= new ArrayList<Socio>();
 		this.edad_limite=edad_limite;
 	}
 

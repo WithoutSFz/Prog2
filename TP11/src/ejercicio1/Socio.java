@@ -72,6 +72,17 @@ public class Socio implements Comparable{
 			return this.apellido.compareTo(((Socio) o).getApellido());
 	}
 	
-	
+	public String toString() {
+		String cuota;
+		if(this.cuota_paga)
+			cuota="Abonado.";
+		else
+			cuota="En deuda.";
+		String list_alqui="";
+		for(Alquiler a :this.alquileres)
+			list_alqui+="  Cancha: "+a.getId()+". Monto alquilado:"+a.getMonto()+". Fecha:"+a.getFecha()+"";
+			
+		return" "+this.apellido+" "+this.nombre+". Edad: "+this.edad+". Estado de la cuota: "+cuota+". Alquileres: \n"+list_alqui+"\n";
+	}
 	
 }
