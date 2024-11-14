@@ -1,9 +1,9 @@
-Public class Kits{
+Public class Kits extends ElemVenta{
   private String nombre;//get y set
   private ArrayList<ElemVenta> productos;
 
   public Kits(String n){
-    nombre=n;
+    super(n);
     productos=new ArrayList<ElemVenta>();
   }
   public void addP(Producto p){
