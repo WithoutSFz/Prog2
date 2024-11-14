@@ -1,15 +1,24 @@
-Public class Producto{
+Public class Producto extends ElemVenta{
   private String nombre;
   private String marca;
-  private Double precio;
-  private Double volumen;
-  //get y set de todo
+  private double precio;
+  private double volumen;
+  
   public Producto (String n,m, Double p,v){
-    nombre=n;
+    super(n);
     marca=m;
     precio=p;
     volumen=v;
   }
 
+  public String getMarca(){
+    return this.marca;
+  }
+  public double getPrecio(){
+    return this.precio;
+  }
+  public double getVolumne(){
+    return this.volumen;
+  }
   
 }
